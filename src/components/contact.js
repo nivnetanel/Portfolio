@@ -31,18 +31,15 @@ function ContactForm() {
               <div className="form-group">
                 <div className="form-row">
                   <div className="col">
-                    {/* <label htmlFor="name">Full Name</label> */}
                     <input id="name" placeholder="Full Name" type="text" name="name" className="form-control" required />
                   </div>
                   <div className="col">
-                    {/* <label htmlFor="email">Email Address</label> */}
                     <input id="email" type="email" placeholder="Email Address" name="email" className="form-control" required />
                     <ValidationError prefix="Email" field="email" errors={state.errors} />
                   </div>
                 </div>
               </div>
               <div className="form-group">
-                {/* <label htmlFor="message">Your Message</label> */}
                 <textarea id="message" placeholder="Your Message" name="message" className="form-control" rows="10" required />
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
