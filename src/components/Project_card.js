@@ -12,7 +12,7 @@ const project_card = [
     project_name: "Swappi",
     technologies: "ReactJS",
     animation_effect: "zoom-in-left",
-    project_link: "https://swaappi.netlify.app/",
+    project_link: "https://swappi-ai.com/",
     thumb: require("../images/portfolio/proj3.png"),
   },
   {
