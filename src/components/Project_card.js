@@ -25,10 +25,10 @@ const project_card = [
   },
   {
     id: 4,
-    project_name: "Telegram-Bot",
-    technologies: "Python",
+    project_name: "Shabtzak",
+    technologies: "ReactJS",
     animation_effect: "zoom-in-right",
-    project_link: "https://github.com/nivnetanel/Telegram-Bots",
+    project_link: "https://shabtsak.top",
     thumb: require("../images/portfolio/proj4.png"),
   },
   {
