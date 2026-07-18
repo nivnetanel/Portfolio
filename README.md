@@ -11,7 +11,7 @@ Personal portfolio website of Niv Netanel, Full Stack Developer.
 - [react-scroll](https://www.npmjs.com/package/react-scroll) — smooth section navigation
 - [Formspree](https://formspree.io/) — contact form backend
 - [Font Awesome](https://fontawesome.com/) — social icons
-- Deployed to GitHub Pages via `gh-pages`
+- Deployed automatically to GitHub Pages via GitHub Actions on every push to `main`
 
 ## Sections
 
@@ -29,12 +29,14 @@ npm start        # dev server at http://localhost:3000
 
 ## Scripts
 
-| Command          | Description                          |
-| ---------------- | ------------------------------------ |
-| `npm start`      | Run the dev server                   |
-| `npm test`       | Run tests in watch mode              |
-| `npm run build`  | Production build into `build/`       |
-| `npm run deploy` | Build and publish to GitHub Pages    |
+| Command         | Description                    |
+| --------------- | ------------------------------ |
+| `npm start`     | Run the dev server             |
+| `npm test`      | Run tests in watch mode        |
+| `npm run build` | Production build into `build/` |
+
+Deployment is automatic: every push to `main` builds and publishes the site
+to GitHub Pages via [deploy.yml](.github/workflows/deploy.yml).
 
 ## Adding a Project
 
