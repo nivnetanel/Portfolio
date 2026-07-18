@@ -3,9 +3,6 @@ import { Link } from "react-scroll";
 import SocialButtons from "./socialbuttons";
 import "../css/base.css";
 import "../css/main.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
 
 class Home extends Component {
   render() {

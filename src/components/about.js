@@ -15,7 +15,7 @@ class About extends Component {
               <h1>Let me introduce myself.</h1>
 
               <div className="intro-info">
-                <img src={profilepic} alt="Profile Picture" data-aos="zoom-in" />
+                <img src={profilepic} alt="Niv Netanel" data-aos="zoom-in" />
                 <p className="lead">My name is Niv Netanel, I live in Israel. I am a Full Stack Developer.</p>
               </div>
             </div>
@@ -38,44 +38,39 @@ class About extends Component {
                 </li>
                 <li>
                   <strong>Github:</strong>
-                  <span>www.github.com/nivnetanel</span>
+                  <span>
+                    <a href="https://github.com/nivnetanel" target="_blank" rel="noopener noreferrer">
+                      github.com/nivnetanel
+                    </a>
+                  </span>
                 </li>
                 <li>
                   <strong>Linkedin:</strong>
-                  <span>www.linkedin.com/in/niv-netanel/</span>
+                  <span>
+                    <a href="https://www.linkedin.com/in/niv-netanel/" target="_blank" rel="noopener noreferrer">
+                      linkedin.com/in/niv-netanel
+                    </a>
+                  </span>
                 </li>
                 <li>
                   <strong>Email:</strong>
-                  <span>nivnetanel96@gmail.com</span>
+                  <span>
+                    <a href="mailto:nivnetanel96@gmail.com">nivnetanel96@gmail.com</a>
+                  </span>
                 </li>
               </ul>
             </div>
 
             <div className="col-six tab-full">
               <h3>TECHNICAL SKILLS</h3>
-              <p className="lead">A software dev with the goal of achieving expertise in Python, Data,Automating Workflow and Machine Learning, Skilled in:</p>
+              <p className="lead">A software developer focused on Python, data, workflow automation and machine learning. Skilled in:</p>
 
-              <ul className="skill-bars">
-                <li>
-                  <div className="progress percent100">{/* <span>90%</span> */}</div>
-                  <strong>HTML5 & CSS</strong>
-                </li>
-                <li>
-                  <div className="progress percent100">{/* <span>85%</span> */}</div>
-                  <strong>REACTJS</strong>
-                </li>
-                <li>
-                  <div className="progress percent100">{/* <span>80%</span> */}</div>
-                  <strong>JAVASCRIPT</strong>
-                </li>
-                <li>
-                  <div className="progress percent100">{/* <span>80%</span> */}</div>
-                  <strong>TYPESCRIPT</strong>
-                </li>
-                <li>
-                  <div className="progress percent100">{/* <span>95%</span> */}</div>
-                  <strong>PYTHON</strong>
-                </li>
+              <ul className="skills-list">
+                {["Python", "JavaScript", "TypeScript", "ReactJS", "HTML5 & CSS"].map((skill) => (
+                  <li key={skill}>
+                    <span className="skill-chip">{skill}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
